@@ -24,16 +24,15 @@ $(document).ready(function() {
      
 });
 //////////////////////////////////////////////////////////////////////////
-function printDiv(divID)  
-{ 
-        var divElements = document.getElementById(divID).innerHTML; 
-        var oldPage = document.body.innerHTML; 
-
-        document.body.innerHTML =  
-          "<html><head><title></title></head><body>" +  
-          divElements + "</body>"; 
-
-        window.print(); 
-
-        document.body.innerHTML = oldPage; 
-    } 
+//////////////////////////////////////////////////////////////////////////
+function PrintDiv() 
+{  
+    var divContents = document.getElementById("printdivcontent").innerHTML;  
+    var printWindow = window.open('', '', 'height=800,width=900');  
+    printWindow.document.write('<html><head><title>Print DIV Content</title>');  
+    printWindow.document.write('</head><body >');  
+    printWindow.document.write(divContents);  
+    printWindow.document.write('</body></html>');  
+    printWindow.document.close();  
+    printWindow.print();  
+ }  
