@@ -1,0 +1,367 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background: url(../images/south_africa_180917\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: rgb(0, 0, 0);
+  height: 100%;
+}
+.container{
+  width: 70%;
+}
+.section-bg{
+  background-color: #EDEDED;
+}
+.header-bg{
+  background-color: #ffffff;
+}
+.head-title{
+  font-size: 30px;
+  font-weight: 700;
+}
+.body-text{
+  font-size: 30px;
+}
+.text-regular{
+  font-weight: 400;
+}
+.text{
+  font-weight: 300;
+}
+.header-icon{
+  padding: 5px 30px 5px 30px;
+  background-color: #FBEBD4;
+  border: 1px solid black;
+  border-radius: 50px;
+width: 87px;
+height: 37px;
+ 
+}
+
+.flex-container{
+width: 100%;
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+#first-rec{
+display: inline-block;
+background-color: #7D6666;
+color: white;
+height: 15rem;
+width: 212px;
+height: 202px;
+margin: 0 2%;
+position: relative;
+}
+#second-rec{
+position: relative;
+display: inline-block;
+background-color: #3FBD6A;
+color: white;
+height: 202.4px;
+width: 212.18px;
+margin: 0 2%;
+}
+#third-rec{
+  position: relative;
+  display: inline-block;
+  background-color: #D9B63D;
+  color: white;
+  height: 79.09px;
+  align-self: center;
+  width:212.18px;
+  margin: 0 2%;
+  align-self: flex-end;
+}
+#first-rec h5{
+  position: absolute;
+  top: 70px;
+  font-weight: 700;
+  font-size: 23px;
+}
+#second-rec h1{
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+#third-rec h1{
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+#pay-img{
+  background-color: #78F075;
+  width:247px;
+  height: 132px;
+  border: 1px solid black ;
+  border-radius: 5px;
+ }
+ .end-rec{
+  display: inline-block;
+  align-self: flex-end;
+  margin: 0 2%;
+ }
+
+ .flight-information{
+   width: 100%;
+  background-color: white;
+
+ }
+ .flight-information{
+  border: 1px solid white;
+  border-radius: 30px;
+  font-family: 'Times New Roman', Times, serif;
+ }
+
+ .flight-date{
+  display:flex;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+ }
+ .flight-information-big-text{
+  font-size: 40px;
+ }
+ .flight-information-small-text{
+  font-size: 25px;
+ }
+ #fligh-information-input{
+   border: 0px ;
+   border-bottom: 1px solid;
+   height: 65px;
+ }
+ .flight-hours{
+  display:flex;
+  padding: 5px 25px;
+ }
+ .flight-place{
+  display:flex;
+  width: 50%;
+  justify-content: space-between;
+  padding-left: 10px;
+ }
+ .price-ticket{
+   background-color: #D9B63D;
+   border: 1px solid white;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+   display:flex;
+   justify-content: space-between;
+  padding: 20px;
+ }
+
+ .separator{
+   height: 10px;
+   background-color: #D99351;
+ }
+
+ /*--------------------------Start of the online payments page ---------------------*/
+
+ .payment-section{
+background-color: white;
+  }
+
+ .payment-form{
+    background-color: white;
+    border: 1px solid black;
+  }
+.payment-form input{
+    width: 100%;
+  }
+.payment-btn{
+ background-color: #D99351; 
+ }
+ 
+ #go-home-logo{
+  background-color: #78F075;
+  width:189px;
+  height: 62px;
+  border: 1px solid black ;
+  border-radius: 20px;
+  margin: 0 auto;
+ }
+ #payment-textarea{
+   width: 100%;
+ }
+
+
+ /*********************** accordion */
+ .panel-default>.panel-heading {
+  color: #333;
+  background-color:  #D99351;
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+.panel-default>.panel-heading a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  font-size: 15px;
+}
+
+.panel-default>.panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  transition: transform .25s linear;
+  -webkit-transition: -webkit-transform .25s linear;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"] {
+  background-color: rgba(55, 9, 9, 0.782);
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+  content: "\2212";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+ 
+}
+
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
+  content: "\002b";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.accordion-option {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 15px 0;
+
+}
+
+.accordion-option .title {
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-option .toggle-accordion {
+  float: right;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgba(55, 9, 9, 0.782);
+  
+}
+
+.accordion-option .toggle-accordion:before {
+  content: "Expand All";
+}
+
+.accordion-option .toggle-accordion.active:before {
+  content: "Collapse All";
+}
+
+.cordion-section{
+  background-color: #ffffff;
+ 
+}
+.panel-body{
+  background-color: white;
+}
+.panel-group{
+  width: 100%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+ 
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.first-td{
+  text-align:left;
+  font-weight: bold;
+}
+#statistics{
+  font-weight: 400;
+}
+
+/*----------------------end of the third page----------------------------*/
+
+
+/*----------------------Start of the fourth page--------------------------*/
+
+ .DetailedTitle{
+   background-color: rgba(226, 221, 226, 0.433);
+ }
+ .DetailedTitle h3{
+font-weight: 2rem;
+}
+#terms-table{
+  text-align: left;
+  font-weight: bolder;
+  text-align: left;
+}
+.table-tr td{
+  border: none;
+}
+#print-icon{
+  background-color: rgba(55, 9, 9, 0.782);
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  
+ 
+}
+#save-icon{
+  background-color:  #D99351;
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+
+}
+.test{
+  position: relative;
+}
+#save-icon a {
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 11px;
+  right: 10px;
+  top: 1px;
+}
+#print-icon a {
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 11px;
+  top: 1px;
+  left: 9px;
+}
+
+/*----------------------End of The fourth page----------------------------*/
